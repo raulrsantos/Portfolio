@@ -1,0 +1,200 @@
+@import url('./reset.min.css');
+
+body {
+    background-color: #1c1c1c;
+    color: #f8f8fff0;
+    font-family: 'courier', monospace;
+    font-weight: 100;
+}
+
+.contato {
+    position: absolute;
+    width: 350px;
+    height: 100px;
+    top: 140px;
+    left: 250px;
+}
+
+.contato h1 {
+    font-size: 50px;
+}
+
+.contato h3 {
+    font-weight: 800;
+}
+
+.contato h1, .contato h3 {
+    font-weight: 500;
+
+}
+
+.sobre {
+    position: absolute;
+    top: 330px;
+    left: 265px;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    
+}
+
+.lista {
+    position: absolute;
+    top: 260px;
+    left: 840px;
+}
+
+.linha_lista {
+    position: absolute;
+    top: 240px;
+    left: 810px;
+    width: 100px; 
+    height: 100px;
+    background: linear-gradient(to top, #636368, #baa52f), 
+                linear-gradient(to left,#636368, #baa52f);
+    background-size: 5px 100%, 100% 5px;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+}
+
+.linha {
+    position: absolute;
+    background: linear-gradient(to bottom right, #c0a821, #636368);
+    top: 340px;
+    left: 250px;
+    width: 5px; 
+    height: 21%;
+    border-radius: 5%;
+}
+
+.div {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+
+#educacaoButton, #projetosButton {
+    padding: 10px 15px;
+    border: unset;
+    border-radius: 15px;
+    color: #e8e8e8;
+    z-index: 1;
+    background: #212121;
+    position: relative;
+    font-weight: 1000;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    width: 100px;
+    text-align: center;
+}
+
+#educacaoButton::before, #projetosButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #e8e8e8;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(255, 255, 255, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(255, 255, 255, 0.27);
+    transition: all 250ms
+}
+
+#educacaoButton:hover, #projetosButton:hover {
+    color: #212121;
+}
+
+#educacaoButton:hover::before, #projetosButton:hover::before {
+    width: 100%;
+}
+
+
+
+.card {
+    display: flex;
+    height: 70px;
+    width: 350px;
+  }
+  
+.card svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.card .social-link1,.card .social-link2,.card .social-link4 {
+    position: relative;
+    left: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+}
+
+.card svg {
+    transform: scale(1);
+}
+
+.card .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+    background-color: #242c34;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+background-color: #0a66c2;
+animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+40% {
+    transform: scale(1.4);
+}
+
+60% {
+    transform: scale(0.8);
+}
+
+80% {
+    transform: scale(1.2);
+}
+
+100% {
+    transform: scale(1);
+}
+}
