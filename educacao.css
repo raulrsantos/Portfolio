@@ -5,6 +5,39 @@ body {
     font-weight: 100;
 }
 
+#voltar {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8fff0;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #494747;
+    color: #f8f8fff0;
+}
+   
+#voltar > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+   
+#voltar:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+}
+   
+#voltar:hover {
+    box-shadow: 9px 9px 33px #4b4d2a, -9px -9px 33px #3b3b55;
+    transform: translateY(-2px);
+}
+
 #formacao {
     position: absolute;
     left: 300px;
@@ -22,8 +55,8 @@ body {
     position: absolute;
     display:none;
     box-sizing: border-box;
-    width: 500px;
-    height: 300px;
+    width: 700px;
+    height: 400px;
     background: #575769;
     border: 1px solid white;
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
@@ -36,20 +69,24 @@ body {
     user-select: none;
     font-weight: 800;
     color: #d4cfcf;
-    left: 340px;
-    top: 124px;
+    left: 243px;
+    top: 80px;
     z-index: 1;
     opacity: 97%;
 }
 
 #text_cursos {
-    margin-top: 70px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 100px; 
+    margin-bottom: 20px;
 }
 
-#text_form {
+#text_form {    
     margin-top: 100px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px; 
+    margin-right: 100px; 
+    margin-bottom: 20px; 
 }
 
 #formacao, #cursos {
