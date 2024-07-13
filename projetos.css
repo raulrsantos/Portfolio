@@ -5,12 +5,47 @@ body {
     font-weight: 100;
 }
 
+#voltar {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8fff0;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #494747;
+    color: #f8f8fff0;
+}
+   
+#voltar > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+   
+#voltar:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+}
+   
+#voltar:hover {
+    box-shadow: 9px 9px 33px #4b4d2a, -9px -9px 33px #3b3b55;
+    transform: translateY(-2px);
+}
+
 button.card1 {
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
     display: inline-block;
+    position: absolute;
+    margin: 100px; /* Adicionado para espaçamento entre os cards */
 }
 
 button.card1:focus {
@@ -18,13 +53,10 @@ button.card1:focus {
 }
 
 .card {
-    position: absolute;
     width: 190px;
     height: 254px;
     background: rgb(38, 38, 38);
     box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.333);
-    top: 160px;
-    left: 230px;
 }
   
 .imge {
@@ -48,15 +80,37 @@ button.card1:focus {
     color: #fff;
 }
 
-#nome {
+.nome {
     position: absolute;
     color: #fff;
     font-weight: bold;
     font-size: 15px;
-    top: 170px;
-    left: 270px;
+    top: 10px;
+    left: 17px;
     z-index: 1;
-    width: 100px;
+    width: 150px;
+}
+
+.nome2 {
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    top: 10px;
+    left: 20px;
+    z-index: 1;
+    width: 150px; /* Ajustado para se adequar ao texto */
+}
+
+.nome3 {
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    top: 10px;
+    left: 20px;
+    z-index: 1;
+    width: 150px; /* Ajustado para se adequar ao texto */
 }
 
 .Description {
@@ -71,9 +125,26 @@ button.card1:focus {
 
 .card1:hover {
     cursor: pointer;
-    transform: scale(1);
+    transform: scale(1.05);
 }
 
 .card1:active {
     transform: scale(0.95) rotateZ(1.7deg);
+    transition: transform 0.1s;
+}
+
+/* Específico para o posicionamento de cada card */
+.card1-1 {
+    top: 50px;
+    left: 130px;
+}
+
+.card1-2 {
+    top: 50px;
+    left: 400px;
+}
+
+.card1-3 {
+    top: 50px;
+    left: 680px;
 }
